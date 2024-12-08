@@ -1,0 +1,45 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+/* === Typography === */
+@layer typography {
+  html {
+    --type-base: 1rem;
+    --type-scale: 1;
+  }
+
+  .type-body {
+    font-family: 'Roboto', sans-serif;
+    line-height: 1.5;
+  }
+
+  .type-title {
+    font-family: 'Oswald', sans-serif;
+    font-weight: 400;
+  }
+
+  :is(.type-sm, .type-md, .type-lg, .type-xl) {
+    font-size: calc(var(--type-base) * var(--type-scale));
+  }
+
+  .type-sm {
+    --type-scale: 0.75;
+  }
+
+  .type-md {
+    --type-scale: 1;
+  }
+
+  .type-lg {
+    --type-scale: 1.333;
+  }
+
+  .type-xl {
+    --type-scale: 1.777;
+  }
+
+  .type-truncated {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+}

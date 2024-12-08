@@ -1,0 +1,159 @@
+<link rel="stylesheet" href="/styles/pages/questlog.css" />
+
+<aside class="sidebar inset-md gap-y-md">
+  <div class="active-list tabs gap-md">
+    <label class="tab type-title type-lg active-item" for="current"
+      >Поточні</label
+    >
+    <label class="tab type-title active-item type-lg" for="completed"
+      >Виконані</label
+    >
+  </div>
+
+  <section class="tab-content gap-y-md">
+    <input
+      class="tab-trigger"
+      name="sidebar:category"
+      type="radio"
+      id="current"
+      hidden
+      checked
+    />
+    <ul class="quest-list active-list gap-y-md">
+      <h3 class="type-title type-md gap-sm">Основні завдання</h3>
+      <li class="active-item gap-x-md inset-sm primary">
+        <label for="quest:0" class="is-contents">
+          <img src="assets/quest.png" alt="" class="icon" />
+          <p class="title type-title type-lg">Серце Порожнечі</p>
+          <p class="desc type-sm">Мала Зона</p>
+          <p class="status type-sm">Відстежується</p>
+        </label>
+      </li>
+      <h3 class="type-title type-md gap-sm">Другорядні завдання</h3>
+
+      <li class="active-item gap-x-md inset-sm tab">
+        <label for="quest:1" class="is-contents">
+          <img src="assets/quest.png" alt="" class="icon" />
+          <p class="title type-title type-lg">Загублені</p>
+          <p class="desc type-sm">Мала Зона</p>
+          <p class="status type-sm">Відстежується</p>
+        </label>
+      </li>
+      <li class="active-item gap-x-md inset-sm">
+        <label for="quest:2" class="is-contents">
+          <img src="assets/quest.png" alt="" class="icon" />
+          <p class="title type-title type-lg">Невидимі тенета</p>
+          <p class="desc type-sm">Мала Зона</p>
+        </label>
+      </li>
+    </ul>
+  </section>
+
+  <section class="tab-content gap-y-md">
+    <input
+      class="tab-trigger"
+      name="sidebar:category"
+      type="radio"
+      id="completed"
+      hidden
+    />
+    <ul class="quest-list active-list gap-y-md">
+      <h3 class="type-title type-md gap-sm">Основні завдання</h3>
+      <h3 class="type-title type-md gap-sm">Другорядні завдання</h3>
+    </ul>
+  </section>
+</aside>
+
+<article class="tab-content questlog-details">
+  <input
+    class="tab-trigger"
+    name="page"
+    type="radio"
+    id="quest:0"
+    hidden
+    checked
+  />
+  <div class="illustration" alt="Task image"></div>
+  <h4 class="title type-title type-xl inset-x-lg inset-y-md">
+    Серце Порожнечі
+  </h4>
+
+  <div class="quest-status inset-x-lg">
+    <h5 class="type-title type-lg inset-y-md">Завдання:</h5>
+    <ul class="log inset-y-lg">
+      <li class="gap-x-md active">Вирішити долю "Серця Порожнечі"</li>
+      <li class="gap-x-md">Пробитися через останню лінію оборони</li>
+      <li class="gap-x-md">Дістатися до лабораторії "Х-0"</li>
+    </ul>
+  </div>
+
+  <div class="description inset-x-lg">
+    <h5 class="type-title type-lg inset-y-md">Опис:</h5>
+    <p class="type-body inset-y-lg">
+      За останні кілька місяців Зона стала ще небезпечнішою: аномалії почали
+      переміщатися, мутанти поводяться агресивніше, а невідомі сили знищують
+      навіть найорганізованіші угруповання. Чутки вказують на єдине джерело
+      цього хаосу — загадковий об’єкт, який сталкери називають "Серцем
+      Порожнечі". Кажуть, він схований у глибинах Зони, де ще ніхто не бував, і
+      саме він є джерелом нових аномалій.
+    </p>
+  </div>
+</article>
+<article class="tab-content questlog-details">
+  <input
+    class="tab-trigger"
+    name="page"
+    type="radio"
+    id="quest:1"
+    hidden
+    checked
+  />
+  <div class="illustration" alt="Task image"></div>
+  <h4 class="title type-title type-xl inset-x-lg inset-y-md">Загублені</h4>
+
+  <div class="quest-status inset-x-lg">
+    <h5 class="type-title type-lg inset-y-md">Завдання:</h5>
+    <ul class="log inset-y-lg">
+      <li class="gap-x-md active">Вибратися із сектора живим</li>
+      <li class="gap-x-md">Розшифрувати сигнал</li>
+      <li class="gap-x-md">Дослідити вузол "Хора-7"</li>
+      <li class="gap-x-md">Знайти радіорелейну вишку</li>
+    </ul>
+  </div>
+
+  <div class="description inset-x-lg">
+    <h5 class="type-title type-lg inset-y-md">Опис:</h5>
+    <p class="type-body inset-y-lg">
+      Серед сталкерів почали ширитися чутки про дивний сигнал, що доноситься зі
+      старого радіорелейного вузла в глибині Зони. Вузол, відомий як "Хора-7",
+      давно покинутий, а дорога до нього — через небезпечні території, де навіть
+      досвідчені сталкери не ризикують ходити. Але сигнал не дає спокою: його
+      частота нестабільна, а зміст кожного нового циклу — інший.
+    </p>
+  </div>
+</article>
+
+<article class="tab-content questlog-details">
+  <input class="tab-trigger" name="page" type="radio" id="quest:2" hidden />
+  <div class="illustration" alt="Task image"></div>
+  <h4 class="title type-title type-xl inset-x-lg inset-y-md">Тіні Вічності</h4>
+  <div class="quest-status inset-x-lg">
+    <h5 class="type-title type-lg inset-y-md">Завдання:</h5>
+    <ul class="log inset-y-lg">
+      <li class="gap-x-md active">Вибратися живим</li>
+      <li class="gap-x-md">Знайти "Ядро Вічності"</li>
+      <li class="gap-x-md">Дослідити руїни комплексу "Аіоніс-8"</li>
+      <li class="gap-x-md">Знайти вхід до Смарагдової порожнечі</li>
+    </ul>
+  </div>
+  <div class="description inset-x-lg">
+    <h5 class="type-title type-lg inset-y-md">Опис:</h5>
+    <p class="type-body inset-y-lg">
+      Комплекс "Аіоніс-8". Місце, про яке ходять легенди серед сталкерів і
+      мародерів. Кажуть, там заховані залишки старих знань, які можуть змінити
+      долю будь-якого, хто їх знайде. Але зараз це більше схоже на пастку.
+      Радіоактивний туман, гравітаційні пастки, дивні сигнали — усе натякає, що
+      там щось не так.
+    </p>
+  </div>
+</article>

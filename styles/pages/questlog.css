@@ -1,0 +1,65 @@
+.questlog-details {
+  height: 100%;
+  grid-area: 1 / 2 / span 10 / -1;
+  grid-template-columns: subgrid;
+  background-color: var(--dark-100);
+
+  h5 {
+    border-bottom: 1px solid var(--light-300);
+  }
+
+  .illustration {
+    grid-area: 1 / 1 / 2 / -1;
+    width: 100%;
+    background: url(/assets/quest-cover.jpg) center / cover no-repeat;
+  }
+
+  .title {
+    background-color: rgba(0, 0, 0, 0.5);
+    grid-area: 1 / 1 / 1 / -1;
+    align-self: end;
+  }
+
+  .log li {
+    display: grid;
+    grid-template-columns: auto 1fr;
+
+    &::before {
+      content: "";
+      display: block;
+      width: var(--bullet-size, 16px);
+      aspect-ratio: 1;
+      background-image: url(/assets/list-bullet.svg);
+      translate: 0 3px;
+    }
+
+    &.active {
+      color: var(--accent);
+
+      &::before {
+        background-image: url(/assets/list-bullet-active.svg);
+      }
+    }
+  }
+
+  .description {
+    grid-column: 2 / span 2;
+  }
+
+  &.tab-content {
+    --tab-display: grid;
+  }
+}
+
+.sidebar {
+  .quest-list {
+    display: flex;
+    flex-direction: column;
+  }
+
+  li.primary {
+    :is(.title, .status) {
+      color: var(--accent)
+    }
+  }
+}

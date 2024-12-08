@@ -1,0 +1,13 @@
+@layer tabs {
+  .tab-content {
+    --tab-display: block;
+  }
+
+  .tab-content:has(> .tab-trigger:not(:checked)) {
+    display: none;
+  }
+
+  .tab-content:has(> .tab-trigger:checked) {
+    display: var(--tab-display);
+  }
+}

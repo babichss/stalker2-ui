@@ -1,0 +1,216 @@
+@layer layout {
+  html {
+    /* Base Spacing */
+    --spacing-base: 8px;
+
+    /* Scale Modifiers */
+    --scale-sm: 0.5;
+    --scale-md: 1;
+    --scale-lg: 2;
+    --scale-xl: 4;
+  }
+
+  .is-contents {
+    display: contents;
+
+    &::after {
+      display: block;
+      content: "";
+      width: 100%;
+      height: 100%;
+      position: absolute;
+    }
+
+    :has(> &) {
+      position: relative;
+    }
+  }
+
+  /* Where has 0 specificity */
+  /* Inset Utilities */
+  :where(.inset-sm, .inset-md, .inset-lg, .inset-xl) {
+    padding: calc(var(--spacing-base) * var(--spacing-inset));
+  }
+
+  :where(.inset-x-sm, .inset-x-md, .inset-x-lg, .inset-x-xl) {
+    padding-inline: calc(var(--spacing-base) * var(--spacing-inset-x));
+  }
+
+  :where(.inset-y-sm, .inset-y-md, .inset-y-lg, .inset-y-xl) {
+    padding-block: calc(var(--spacing-base) * var(--spacing-inset-y));
+  }
+
+  /* Offset Utilities */
+  :where(.offset-sm, .offset-md, .offset-lg, .offset-xl) {
+    margin: calc(var(--spacing-base) * var(--spacing-offset));
+  }
+
+  :where(.offset-x-sm, .offset-x-md, .offset-x-lg, .offset-x-xl) {
+    margin-inline: calc(var(--spacing-base) * var(--spacing-offset-x));
+  }
+
+  :where(.offset-y-sm, .offset-y-md, .offset-y-lg, .offset-y-xl) {
+    margin-block: calc(var(--spacing-base) * var(--spacing-offset-y));
+  }
+
+  /* Gap Utilities */
+  :where(.gap-sm, .gap-md, .gap-lg, .gap-xl) {
+    gap: calc(var(--spacing-base) * var(--spacing-gap));
+  }
+
+  :where(.gap-x-sm, .gap-x-md, .gap-x-lg, .gap-x-xl) {
+    column-gap: calc(var(--spacing-base) * var(--spacing-gap-x));
+  }
+
+  :where(.gap-y-sm, .gap-y-md, .gap-y-lg, .gap-y-xl) {
+    row-gap: calc(var(--spacing-base) * var(--spacing-gap-y));
+  }
+
+  /* Specific Spacing Modifiers */
+  /* Insets */
+  .inset-sm {
+    --spacing-inset: var(--scale-sm);
+  }
+
+  .inset-md {
+    --spacing-inset: var(--scale-md);
+  }
+
+  .inset-lg {
+    --spacing-inset: var(--scale-lg);
+  }
+
+  .inset-xl {
+    --spacing-inset: var(--scale-xl);
+  }
+
+  .inset-x-sm {
+    --spacing-inset-x: var(--scale-sm);
+  }
+
+  .inset-x-md {
+    --spacing-inset-x: var(--scale-md);
+  }
+
+  .inset-x-lg {
+    --spacing-inset-x: var(--scale-lg);
+  }
+
+  .inset-x-xl {
+    --spacing-inset-x: var(--scale-xl);
+  }
+
+  .inset-y-sm {
+    --spacing-inset-y: var(--scale-sm);
+  }
+
+  .inset-y-md {
+    --spacing-inset-y: var(--scale-md);
+  }
+
+  .inset-y-lg {
+    --spacing-inset-y: var(--scale-lg);
+  }
+
+  .inset-y-xl {
+    --spacing-inset-y: var(--scale-xl);
+  }
+
+  /* Offsets */
+  .offset-sm {
+    --spacing-offset: var(--scale-sm);
+  }
+
+  .offset-md {
+    --spacing-offset: var(--scale-md);
+  }
+
+  .offset-lg {
+    --spacing-offset: var(--scale-lg);
+  }
+
+  .offset-xl {
+    --spacing-offset: var(--scale-xl);
+  }
+
+  .offset-x-sm {
+    --spacing-offset-x: var(--scale-sm);
+  }
+
+  .offset-x-md {
+    --spacing-offset-x: var(--scale-md);
+  }
+
+  .offset-x-lg {
+    --spacing-offset-x: var(--scale-lg);
+  }
+
+  .offset-x-xl {
+    --spacing-offset-x: var(--scale-xl);
+  }
+
+  .offset-y-sm {
+    --spacing-offset-y: var(--scale-sm);
+  }
+
+  .offset-y-md {
+    --spacing-offset-y: var(--scale-md);
+  }
+
+  .offset-y-lg {
+    --spacing-offset-y: var(--scale-lg);
+  }
+
+  .offset-y-xl {
+    --spacing-offset-y: var(--scale-xl);
+  }
+
+  /* Gaps */
+  .gap-sm {
+    --spacing-gap: var(--scale-sm);
+  }
+
+  .gap-md {
+    --spacing-gap: var(--scale-md);
+  }
+
+  .gap-lg {
+    --spacing-gap: var(--scale-lg);
+  }
+
+  .gap-xl {
+    --spacing-gap: var(--scale-xl);
+  }
+
+  .gap-x-sm {
+    --spacing-gap-x: var(--scale-sm);
+  }
+
+  .gap-x-md {
+    --spacing-gap-x: var(--scale-md);
+  }
+
+  .gap-x-lg {
+    --spacing-gap-x: var(--scale-lg);
+  }
+
+  .gap-x-xl {
+    --spacing-gap-x: var(--scale-xl);
+  }
+
+  .gap-y-sm {
+    --spacing-gap-y: var(--scale-sm);
+  }
+
+  .gap-y-md {
+    --spacing-gap-y: var(--scale-md);
+  }
+
+  .gap-y-lg {
+    --spacing-gap-y: var(--scale-lg);
+  }
+
+  .gap-y-xl {
+    --spacing-gap-y: var(--scale-xl);
+  }
+}

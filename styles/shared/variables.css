@@ -1,0 +1,11 @@
+html {
+  --dark-100: #14110f;
+  --dark-200: #1e1c1a;
+  --dark-300: #333333;
+
+  --light-100: #cabfb0;
+  --light-200: #9e8d77;
+  --light-300: #463e3a;
+
+  --accent: #ef8e02;
+}

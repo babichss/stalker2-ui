@@ -1,0 +1,13 @@
+body {
+  height: 100vh;
+  display: grid;
+  grid-template-rows: 10vh 1fr auto;
+  background-color: var(--dark-100);
+  color: var(--light-100);
+}
+
+main {
+  display: grid;
+  grid-template-columns: minmax(0, 320px) repeat(3, 1fr);
+  background-color: var(--dark-300);
+}
